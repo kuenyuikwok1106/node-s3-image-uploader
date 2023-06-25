@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/my-tripsite/node_modules
 /.pnp
 .pnp.js
 

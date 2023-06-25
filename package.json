@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node ./src/main.ts",
+    "build": "npx tsx"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
