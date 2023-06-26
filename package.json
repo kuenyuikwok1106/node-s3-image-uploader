@@ -9,6 +9,7 @@
   "dependencies": {
     "@aws-sdk/client-s3": "^3.359.0",
     "@types/node": "^20.3.1",
+    "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
     "heic-convert": "^1.2.4",
     "sharp": "^0.32.1",
