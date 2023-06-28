@@ -56,9 +56,10 @@ const parse = async(ABSOLUTE_PATH, awsS3Client) => {
         image = await sharp(ABSOLUTE_PATH).jpeg({
           quality: 100,
           chromaSubsampling: '4:4:4'
-        }).toBuffer();
+        }).withMetadata().toBuffer();
       }
       const cmd = new PutObjectCommand({
+        'ContentType': 'image/jpeg',
         'Bucket': process.env.S3_BUCKET_NAME,
         'Body': image,
         'Key': newPathSegment.slice(newPathSegment.length - 3).join('/'),
